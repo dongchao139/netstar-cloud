@@ -1,6 +1,6 @@
 # netstar-cloud
 
-> A Vue.js project
+> A project created from vue scaffold, using for webpack demo
 
 ## Build Setup
 
