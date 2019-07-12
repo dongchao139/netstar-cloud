@@ -1,5 +1,6 @@
  import './vue-demo.js';
  import './assets/demo.css';
+ import './assets/demo2.less';
  import 'es6-promise/auto';
  import {appDemo} from "./vue-demo";
  import {test} from "./vue-demo";
