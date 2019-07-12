@@ -1,7 +1,7 @@
 {
   "name": "netstar-cloud",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A project created from vue scaffold, using for webpack demos",
   "author": "donnc <donnchao@outlook.com>",
   "private": true,
   "scripts": {
