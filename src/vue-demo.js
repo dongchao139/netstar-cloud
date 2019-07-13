@@ -91,6 +91,10 @@ new Vue({
     }
 });
 
-export var appDemo = {};
+export var appDemo = {
+    appDemo: true
+};
 
-export var test={};
+export var test={
+    test:true
+};
