@@ -42,6 +42,11 @@ module.exports = {
                 }],
             },
             {
+                // 对模版文件使用ejs-loader
+                test: /\.tpl$/,
+                use: 'ejs-loader'
+            },
+            {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 exclude: /node_modules/,
