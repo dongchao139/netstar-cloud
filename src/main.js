@@ -4,8 +4,9 @@
  import 'es6-promise/auto';
  import Vue from 'vue';
 
- import './vue-demo.js';
+ //import './vue-demo.js';
  import {appDemo, test} from "./vue-demo";
+ import './vue-computed.js';
 
  import loading from './components/loading.components';
  //声明全局vue组件

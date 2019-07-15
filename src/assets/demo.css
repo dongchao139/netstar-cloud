@@ -1,3 +1,7 @@
 .redimg {
     background: url("./logo.png");
 }
+
+input {
+    display: inline-block;
+}
