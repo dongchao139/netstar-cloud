@@ -5,12 +5,14 @@
  import Vue from 'vue';
 
  //import './vue-demo.js';
- import {appDemo, test} from "./vue-demo";
- import './vue-computed.js';
+ //import './components/vue-computed.js';
+ import {appDemo, test} from "./components/vue-demo";
 
- import loading from './components/loading.components';
+ import loading from './components/loading/loading.components';
  //声明全局vue组件
  Vue.use(loading);
+
+ //import './components/vue-filter-demo';
 
 // var app = document.getElementById("app");
 // app.innerHTML = '<div>hello webpack</div>';

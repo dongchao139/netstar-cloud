@@ -1,7 +1,7 @@
 //封装vue模块组件实例
 
 import LoadingComponent from "./Loading";
-import Loading2Component from "./loading2";
+import Loading2Component from "./Loading2";
 
 const Loading = {
     install(vue) {

@@ -1,5 +1,5 @@
 import Vue from "vue";
-import vueComputed from "./components/vue-computed.tpl";
+import vueComputed from "./vue-computed.tpl";
 
 let template = vueComputed();
 console.log('typeof vueComputed: ' + typeof vueComputed);
