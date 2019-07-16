@@ -4,21 +4,24 @@
  import 'es6-promise/auto';
  import Vue from 'vue';
 
- //import './vue-demo.js';
- //import './components/vue-computed.js';
  import {appDemo, test} from "./components/vue-demo";
+ //引入其他模块示例
+ console.log(test);
+ console.log(appDemo);
 
  import loading from './components/loading/loading.components';
  //声明全局vue组件
  Vue.use(loading);
 
+ //import './vue-demo.js';
+ //import './components/vue-computed.js';
  //import './components/vue-filter-demo';
 
-// var app = document.getElementById("app");
-// app.innerHTML = '<div>hello webpack</div>';
+ //直接操作dom示例
+ // var app = document.getElementById("app");
+ // app.innerHTML = '<div>hello webpack</div>';
 
- console.log(test);
- console.log(appDemo);
+ import './components/vue-instance.js';
 
  //异步加载js示例
  import('./sync.js').then(data => {
