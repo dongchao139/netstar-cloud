@@ -17,11 +17,13 @@
  //import './components/vue-computed.js';
  //import './components/vue-filter-demo';
 
+ //import './components/vue-instance.js';
+ import './components/vue-directive.js';
+
  //直接操作dom示例
  // var app = document.getElementById("app");
  // app.innerHTML = '<div>hello webpack</div>';
 
- import './components/vue-instance.js';
 
  //异步加载js示例
  import('./sync.js').then(data => {
