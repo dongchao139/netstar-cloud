@@ -20,8 +20,9 @@
  //import './components/vue-directive.js';
  //import './components/vue-life-cycle.js';
 
- import "./components/vue-slot-demo.js"
-
+ //import "./components/vue-slot-demo.js"
+ //import "./components/vue-child-component.js"
+ import "./components/vue-dynamic-components.js"
 
  //直接操作dom示例
  // var app = document.getElementById("app");
