@@ -18,7 +18,10 @@
  //import './components/vue-filter-demo';
  //import './components/vue-instance.js';
  //import './components/vue-directive.js';
- import './components/vue-life-cycle.js';
+ //import './components/vue-life-cycle.js';
+
+ import "./components/vue-slot-demo.js"
+
 
  //直接操作dom示例
  // var app = document.getElementById("app");
