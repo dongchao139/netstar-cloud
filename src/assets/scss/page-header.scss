@@ -17,11 +17,11 @@
     width: auto;
   }
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(md) {
     .display-3 {
-      padding-bottom: $spacer;
+      padding-top: $spacer-y;
       font-size: $display4-size;
-      text-align: center;
+      text-align: left;
     }
   }
 }

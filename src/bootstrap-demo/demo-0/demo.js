@@ -1,14 +1,13 @@
 export var template = `
     <header role="banner">
-        <div class="collapse" id="collapsiblecontent">
+        <!--<div class="collapse" id="collapsiblecontent">
             Collapsible content
         </div>
         <nav class="navbar navbar-light bg-faded" role="navigation">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsiblecontent">
                 ≡
             </button>
-        </nav>
-    <!--</nav>
+        </nav>-->
         <nav class="navbar navbar-light bg-faded" role="navigation">
             <a class="navbar-brand" href="#">Navbar</a>
             <ul class="nav navbar-nav">
@@ -29,7 +28,7 @@ export var template = `
                 <input class="form-control" type="text" placeholder="Search">
                 <button class="btn btn-success-outline" type="submit">Search</button>
             </form>
-        </nav>-->
+        </nav>
     </header>
     <main role="main">
         <h1>Main Heading</h1>

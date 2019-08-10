@@ -4,7 +4,7 @@ import './assets/scss/app.scss'
 
 import {appDemo, test} from "./components/vue-demo";
 import loading from './components/loading/loading.components';
-import {template} from "./bootstrap-demo/demo-0/demo.js"
+import {template} from "./bootstrap-demo/demo-1/demo1.js"
 
 import "./bootstrap-demo/bootstrap.include.js"
 import Vue from 'vue';
