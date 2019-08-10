@@ -1,3 +1,14 @@
+/** TODO 自定义变量*/
+$darkest-color: #000; // black;
+$lightest-color: #fff; // white;
+$company-primary-color: #f80; //orange;
+
+// Page Header
+$page-header-background: $darkest-color;
+
+// Page Header
+$page-footer-background: $company-primary-color;
+/** TODO 自定义变量*/
 // Variables
 //
 // Copy settings from this file into the provided `_custom.scss` to override
@@ -38,17 +49,6 @@ $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
-/** TODO 自定义变量*/
-$darkest-color: #000; // black;
-$lightest-color: #fff; // white;
-$company-primary-color: #f80; //orange;
-
-// Page Header
-$page-header-background: $darkest-color;
-
-// Page Header
-$page-footer-background: $company-primary-color;
-/** TODO 自定义变量*/
 
 // Options
 //
