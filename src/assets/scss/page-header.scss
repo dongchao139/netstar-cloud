@@ -25,3 +25,9 @@
     }
   }
 }
+
+.navbar {
+  // 背景：透明；
+  //background: $navbar-background;
+  @include gradient-horizontal(green, white);
+}
