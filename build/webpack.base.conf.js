@@ -43,7 +43,7 @@ module.exports = {
             },
             {
                 // 对模版文件使用ejs-loader
-                test: /\.tpl$/,
+                test: /\.(tpl|ejs)$/,
                 use: 'ejs-loader'
             },
             {
