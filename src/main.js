@@ -5,8 +5,12 @@ import './assets/scss/app.scss'
 import {appDemo, test} from "./components/vue-demo";
 import loading from './components/loading/loading.components';
 import {template} from "./bootstrap-demo/demo-1/demo1.js"
-
+//引入bootstrap的js文件的方法
+//全部引入
+//import "./bootstrap-demo/bootstrap.js";
+//分开引入
 import "./bootstrap-demo/bootstrap.include.js"
+
 import Vue from 'vue';
 
 //引入其他模块示例

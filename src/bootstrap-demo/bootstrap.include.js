@@ -8,3 +8,6 @@ require('bootstrap/dist/js/umd/dropdown.js')
 require('bootstrap/dist/js/umd/modal.js')
 require('bootstrap/dist/js/umd/scrollspy.js')
 require('bootstrap/dist/js/umd/tab.js')
+require('bootstrap/dist/js/umd/tooltip.js')
+require('bootstrap/dist/js/umd/popover.js')
+

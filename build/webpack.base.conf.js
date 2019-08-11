@@ -102,8 +102,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             jQuery: "jquery",
             $: "jquery",
-            Popper: "popper",
-            popper: "popper"
+            "window.Tether":"tether",
+            "tether": "tether"
         })
     ],
     node: {
