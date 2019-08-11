@@ -1,13 +1,5 @@
 export var template = `
     <header role="banner">
-        <!--<div class="collapse" id="collapsiblecontent">
-            Collapsible content
-        </div>
-        <nav class="navbar navbar-light bg-faded" role="navigation">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsiblecontent">
-                ≡
-            </button>
-        </nav>-->
         <nav class="navbar navbar-light bg-faded" role="navigation">
             <a class="navbar-brand" href="#">Navbar</a>
             <ul class="nav navbar-nav">
