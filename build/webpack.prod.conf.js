@@ -14,6 +14,13 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const env = require('../config/prod.env')
 
 const webpackConfig = merge(baseWebpackConfig, {
+    module: {
+        rules: utils.styleLoaders({
+            sourceMap: config.build.productionSourceMap,
+            extract: true,
+            usePostCSS: true
+        })
+    },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
     path: config.build.assetsRoot,
@@ -100,7 +107,22 @@ const webpackConfig = merge(baseWebpackConfig, {
       children: true,
       minChunks: 3
     }),
-
+      //将 ../src/assets/js/common下的js单独打包成一个js(不常修改的文件)
+      new webpack.optimize.CommonsChunkPlugin({
+          name: 'common',
+          chunks: ['app'],
+          filename:'static/js/[name].[chunkhash].js',
+          minChunks (module) {
+              console.log(module.resource);
+              return (
+                  module.resource &&
+                  /\.js$/.test(module.resource) &&
+                  module.resource.indexOf(
+                      path.join(__dirname, '../src/assets/js/common')
+                  ) === 0
+              )
+          }
+      }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

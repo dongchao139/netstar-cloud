@@ -46,21 +46,17 @@ module.exports = {
                 use: 'ejs-loader'
             },
             {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
+                options: {
+                    appendTsSuffixTo: [/\.vue$/],
+                }
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')],
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader','css-loader','postcss-loader'
-                ]
-            },
-            {
-              test: /\.scss$/,
-              use: [
-                'style-loader','css-loader','sass-loader'
-              ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
