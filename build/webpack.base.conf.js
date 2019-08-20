@@ -46,19 +46,11 @@ module.exports = {
                 use: 'ejs-loader'
             },
             {
-                test: /\.tsx?$/,
-                loader: 'ts-loader',
-                exclude: /node_modules/,
-                options: {
-                    appendTsSuffixTo: [/\.vue$/],
-                }
-            },
-            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')],
             },
-          //TODO  添加CSS，SASS加载器
+            //TODO  添加CSS，SASS加载器
             {
                 test: /\.css$/,
                 use: [
