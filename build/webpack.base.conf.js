@@ -50,12 +50,17 @@ module.exports = {
                 loader: 'babel-loader',
                 include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')],
             },
-            //TODO  添加CSS，SASS加载器
             {
                 test: /\.css$/,
                 use: [
-                    ''
+                    'style-loader','css-loader','postcss-loader'
                 ]
+            },
+            {
+              test: /\.scss$/,
+              use: [
+                'style-loader','css-loader','sass-loader'
+              ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
