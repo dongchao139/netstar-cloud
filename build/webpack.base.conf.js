@@ -46,9 +46,9 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
-                include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')],
+                include: [resolve('src'), resolve('node_modules/webpack-dev-server/client')],
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
