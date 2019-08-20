@@ -2,7 +2,6 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
-const vueLoaderConfig = require('./vue-loader.conf')
 const webpack = require('webpack')
 
 function resolve(dir) {
@@ -23,9 +22,8 @@ module.exports = {
             : config.dev.assetsPublicPath
     },
     resolve: {
-        extensions: ['.js', 'ts', '.vue', '.json'],
+        extensions: ['.js', 'ts', '.json'],
         alias: {
-            'vue$': 'vue/dist/vue.esm.js',
             '@': resolve('src'),
         }
     },
@@ -56,19 +54,15 @@ module.exports = {
                 }
             },
             {
-                test: /\.vue$/,
-                loader: 'vue-loader',
-                options: vueLoaderConfig
-            },
-            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')],
             },
+          //TODO  添加CSS，SASS加载器
             {
                 test: /\.css$/,
                 use: [
-                    'vue-style-loader'
+                    ''
                 ]
             },
             {
