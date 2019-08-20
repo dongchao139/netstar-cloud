@@ -1,4 +1,5 @@
 import './assets/scss/app.scss'
+import './assets/game.css'
 
 //添加promise profile, 支持浏览器异步加载js
 import 'es6-promise/auto';
@@ -7,4 +8,6 @@ import 'es6-promise/auto';
 //分开引入
 import "./bootstrap-demo/bootstrap.include.js"
 
-import "./components/index.component.jsx"
+//import "./components/index.component.jsx"
+
+import "./components/game.component.jsx"
