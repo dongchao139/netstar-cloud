@@ -1,8 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-// @ts-ignore
-import Board from './board.component.tsx';
+import Board from './board.component';
 
 class Game extends React.Component {
     render() {

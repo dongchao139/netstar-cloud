@@ -6,12 +6,12 @@ import 'es6-promise/auto';
 
 //引入bootstrap的js文件的方法
 //分开引入
-import "./bootstrap-demo/bootstrap.include.js"
+import "./bootstrap-demo/bootstrap.include"
 
-import "./components/index.component.tsx"
+import "./components/index.component"
 
-import "./components/game.component.tsx";
+import "./components/game.component";
 
-import {test} from './components/test.ts';
+import {test} from './components/test';
 
 test();

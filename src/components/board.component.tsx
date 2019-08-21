@@ -1,6 +1,6 @@
 import * as React from "react";
-// @ts-ignore
-import Square from "./square.component.tsx";
+
+import Square from "./square.component";
 
 interface State {
     squares: Array<string>,
