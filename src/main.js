@@ -8,6 +8,10 @@ import 'es6-promise/auto';
 //分开引入
 import "./bootstrap-demo/bootstrap.include.js"
 
-//import "./components/index.component.jsx"
+import "./components/index.component.tsx"
 
 import "./components/game.component.jsx"
+
+import {test} from './components/test.ts';
+
+test();

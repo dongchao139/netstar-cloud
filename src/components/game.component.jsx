@@ -1,13 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-/**
- * 而对于用户自定义的组件来说，命名就可以由用户自己来定义了。
- * 我们给 Square 的 onClick 和 Board 的 handleClick 赋予任意的名称，
- * 代码依旧有效。
- * 在 React 中，有一个命名规范，通常会将代表事件的监听 prop 命名为 on[Event]，
- * 将处理事件的监听方法命名为 handle[Event] 这样的格式。
- */
 /*class Square extends React.Component {
     render() {
         return (
