@@ -10,7 +10,7 @@ import "./bootstrap-demo/bootstrap.include.js"
 
 import "./components/index.component.tsx"
 
-import "./components/game.component.jsx"
+import "./components/game.component.tsx";
 
 import {test} from './components/test.ts';
 

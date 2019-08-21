@@ -1,26 +1,13 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from "react";
+// @ts-ignore
+import Square from "./square.component.tsx";
 
-/*class Square extends React.Component {
-    render() {
-        return (
-        <button className="square"
-                onClick={() => this.props.onClick({value: 'X'})}>
-            {this.props.value}
-        </button>
-        )
-    }
-}*/
-
-function Square(props) {
-    return (
-        <button className="square" onClick={props.onClick}>
-            {props.value}
-        </button>
-    )
+interface State {
+    squares: Array<string>,
+    xIsNext: boolean
 }
 
-class Board extends React.Component {
+export default class Board extends React.Component<Object,State> {
     constructor(props) {
         super(props);
         this.state = {
@@ -32,7 +19,7 @@ class Board extends React.Component {
     renderSquare(i) {
         return (
             <Square value = {this.state.squares[i]}
-                onClick={() => this.handleClick(i)}/>
+                    onClick={() => this.handleClick(i)}/>
         )
     }
 
@@ -77,28 +64,7 @@ class Board extends React.Component {
     }
 }
 
-class Game extends React.Component{
-    render() {
-        return (
-            <div className="game">
-                <div className="game-board">
-                    <Board/>
-                </div>
-                <div className="game-info">
-                    <div>{/* status */}</div>
-                    <ol>{/* TODO */}</ol>
-                </div>
-            </div>
-        )
-    }
-}
-
-ReactDOM.render(
-    <Game/>,
-    document.getElementById('root')
-)
-
-function calculateWinner(squares) {
+export function calculateWinner(squares) {
     const lines = [
         [0, 1, 2],
         [3, 4, 5],

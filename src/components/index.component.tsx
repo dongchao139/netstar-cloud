@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-export interface State {
+interface State {
     msg: string
 }
 
-class IndexComponent extends React.Component<Object,State>{
+class IndexComponent extends React.Component<Object,State> {
     render(){
         this.state = {
             msg: 'hello'
