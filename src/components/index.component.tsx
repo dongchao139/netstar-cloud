@@ -5,7 +5,7 @@ interface State {
     msg: string
 }
 
-class IndexComponent extends React.Component<Object,State> {
+export default class IndexComponent extends React.Component<Object,State> {
     render(){
         this.state = {
             msg: 'hello'

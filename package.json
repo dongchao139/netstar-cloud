@@ -1,9 +1,14 @@
 {
-  "name": "netstar-cloud",
-  "version": "1.0.0",
+  "name": "donnchaoreactdemo",
+  "version": "1.0.1",
   "description": "A project created from vue scaffold, using for webpack demos",
   "author": "donnc <donnchao@outlook.com>",
-  "private": true,
+  "private": false,
+  "main": "index.js",
+  "files": [
+    "src"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
