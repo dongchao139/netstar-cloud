@@ -26,7 +26,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2'  //将打包后的文件转换为commonjs2的模块
   },
   plugins: [
     new webpack.DefinePlugin({
