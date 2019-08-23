@@ -1,12 +1,18 @@
 {
-  "name": "netstar-cloud-common",
+  "name": "donnchaoreactdemo",
   "description": "A project created from vue scaffold, using for webpack demos",
   "author": "donnc <donnchao@outlook.com>",
-  "private": true,
+  "private": false,
+  "main": "index.js",
+  "version": "1.0.4",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "pub": "webpack --config build/webpack.pub.config.js"
   },
   "dependencies": {
     "babel-preset-react": "^6.24.1",

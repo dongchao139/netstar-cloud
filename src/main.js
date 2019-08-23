@@ -1,17 +1,24 @@
-import './assets/scss/app.scss'
-import './assets/game.css'
+// import './assets/scss/app.scss'
+// import './assets/game.css'
 
-//添加promise profile, 支持浏览器异步加载js
-import 'es6-promise/auto';
+// //添加promise profile, 支持浏览器异步加载js
+// import 'es6-promise/auto';
 
-//引入bootstrap的js文件的方法
-//分开引入
-import "./bootstrap-demo/bootstrap.include"
+// //引入bootstrap的js文件的方法
+// //分开引入
+// import "./bootstrap-demo/bootstrap.include"
 
-import "./components/index.component"
+ //import {IndexComponent} from "./components/index.component";
 
-import "./components/game.component";
+//export default IndexComponent;
 
-import {test} from './components/test';
+// import "./components/game.component";
 
-test();
+// import {test} from './components/test';
+
+// test();
+
+import "./components/index.component";
+
+var app = require ('../dist/static/js/app').default;
+console.log(app);
